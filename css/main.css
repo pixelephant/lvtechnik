@@ -1,0 +1,883 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.black-button{
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border:1px solid #000;
+    padding: 0;
+    background: none;
+    color: #E0E0E1;
+    padding: 5px;
+    background-color: #7a7a7a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7a7a7a), to(#333333)); /* Safari 4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #7a7a7a, #333333); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #7a7a7a, #333333); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #7a7a7a, #333333); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #7a7a7a, #333333); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+.black-button:hover{
+    border:1px solid #fff;
+    background-color: #f08b48;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f08b48), to(#ec6810)); /* Safari 4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #f08b48, #ec6810); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #f08b48, #ec6810); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #f08b48, #ec6810); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #f08b48, #ec6810); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+
+body{
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 10px;
+    color: #000000;
+    background: url(../img/bg.gif) repeat #E6E6E6;
+}
+
+#main{
+    width: 917px;
+    margin:0 auto;
+}
+
+#main-header{
+    
+    overflow:hidden;
+}
+
+#logo{
+    float: left;
+    padding: 10px 0;
+}
+
+#user-block{
+    float: right;
+    overflow: hidden;
+}
+
+#login-form,#mini-cart{
+    border-top: 1px solid #8E8E8E;
+    /*overflow: hidden;*/
+    background-color: #5F5F5F; /* Safari 4+, Chrome */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5F5F5F), to(#878787));
+    background-image: -webkit-linear-gradient(#5F5F5F, #878787);
+    background-image: -moz-linear-gradient(#5F5F5F, #878787);
+    background-image: -o-linear-gradient(#5F5F5F, #878787);
+    background-image: linear-gradient(#5F5F5F, #878787); /* Chrome 10+, Safari 5.1+, iOS 5+ */ /* Firefox 3.6-15 */ /* Opera 11.10-12.00 */ /* Firefox 16+, IE10, Opera 12.50+ */
+    padding:5px 10px;
+}
+
+#login-form label,#mini-cart{
+    color:#e0e0e0;
+}
+
+#login-form input[type="email"],#login-form input[type="password"]{
+    border: 1px solid;
+    background: #fff;
+    margin-right: 10px;
+}
+
+#login-form input[type="submit"],#mini-cart a{
+    
+}
+
+#mini-cart{
+    overflow: hidden;
+}
+
+#mini-cart div{
+    float: left;
+    padding-top: 5px;
+}
+
+#mini-cart .cart-btn{
+    margin-right: 10px;
+}
+
+#mini-cart span{
+    margin-right:10px;
+}
+
+#mini-cart .view-btn{
+    float: right;
+}
+
+#main-nav{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#main-nav ul{
+    width: 917px;
+    overflow: hidden;
+}
+
+
+#main-nav ul li{
+    width:20%;
+    float: left;
+    text-align: center;
+    color:#e0e0e0;
+    font-size: 10px;
+}
+
+#main-nav ul li a,#search-form{
+    height:30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    display: block;
+    color:#e0e0e0;
+    background-color: #7a7a7a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7a7a7a), to(#333333)); /* Safari 4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #7a7a7a, #333333); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #7a7a7a, #333333); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #7a7a7a, #333333); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #7a7a7a, #333333); /* Firefox 16+, IE10, Opera 12.50+ */
+    text-decoration: none;
+    border-right:1px solid #484848;
+}
+
+#main-nav ul li a:hover{
+    background-color: #f08b48;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f08b48), to(#ec6810)); /* Safari 4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #f08b48, #ec6810); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #f08b48, #ec6810); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #f08b48, #ec6810); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #f08b48, #ec6810); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+
+#search-form input[type="search"]{
+    padding: 0;
+    border:none;
+    border: 1px solid;
+    background: #fff;
+    width:120px;
+}
+
+#search-form input[type="submit"]{
+    border: none;
+}
+
+#promo{
+    height:210px;
+    background: url(../img/lv_big_banner4.jpeg) no-repeat;
+    position: relative;
+}
+
+#promo p{
+    position: absolute;
+    bottom:11px;
+    color: #fff;
+    left: 80px;
+    color: #ffffff;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 12px;
+}
+
+#content{
+    overflow: hidden;
+}
+
+#main-aside{
+    float: left;
+    width: 210px;
+}
+
+#main-aside .section{
+    background: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #BBBBBB;
+}
+
+#main-aside .section h3{
+    margin: 0;
+    padding:8px;
+    color:#fff;
+    text-transform: uppercase;
+    background-color: #888888;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#888888), to(#5f5e62)); /* Safari 4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #888888, #5f5e62); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #888888, #5f5e62); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #888888, #5f5e62); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #888888, #5f5e62); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+#main-aside .section h3 img{
+    margin-right: 5px;
+}
+
+#main-aside .section ul li{
+    border-bottom: 1px dotted #BBBBBB;
+}
+
+#main-aside .section ul li a{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    background: url(../img/arrow-right.gif) no-repeat left 3px;
+    padding-left: 18px;
+}
+
+.sub{
+    display: none;
+}
+
+.sub a{
+    margin-left: 15px;
+    background: url(../img/arrow-right.gif) no-repeat left 3px !important;
+}
+
+.sub li:hover{
+    background-color: #ec6810 !important;
+}
+
+#main-aside .section ul li a:hover{
+    background-color: #ec6810;
+}
+
+
+#main-aside .section ul li.open a{
+    text-decoration: underline;
+    background: url(../img/arrow-down.gif) no-repeat left 3px;
+}
+
+#main-aside .section ul li.open .sub{
+    display: block;
+}
+
+#main-aside .section ul li:last-child{
+    border-bottom: none;
+}
+
+.attention a{
+    border-bottom: 1px dotted #BBBBBB;
+    padding: 10px 5px;
+}
+
+.attention a:last-child{
+    border-bottom: none;
+}
+
+.product{
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.product p{
+    text-align: left;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.product img{
+    margin-bottom: 10px;
+}
+
+.product-price{
+    color:#325A7C;
+}
+
+.product-actions{
+    background:#E6E6E6;
+    font-size: 10px;
+    padding:3px;
+    overflow: hidden;
+}
+
+.product-availability img{
+    margin-right: 3px;
+    position: relative;
+    top:3px;
+}
+
+.product-actions a{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.product-sku{
+    font-weight: normal !important;
+}
+
+#main-content{
+    float: left;
+    margin-left: 10px;
+    font-size: 11px;
+    width: 697px;   
+}
+
+#main-content .block{
+    background: #fff;
+    border: 1px solid #BBBBBB;
+    margin-bottom: 10px;
+}
+
+#main-content .grid{
+    overflow: hidden;
+}
+
+#main-content .grid .block-inner{
+    padding: 0;
+    overflow: hidden;
+    padding-left: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#main-content .block.grid .product{
+    width: 157px;
+    float: left;
+    border: 1px dotted #bbb;
+    margin: 2px;
+}
+
+#main-content .block.grid.category .product-name{
+    text-align: center;
+}
+
+#main-content .block h3{
+    margin: 0;
+    padding:8px;
+    color:#fff;
+    text-transform: uppercase;
+    background-color: #888888;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#888888), to(#5f5e62)); /* Safari 4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #888888, #5f5e62); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #888888, #5f5e62); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #888888, #5f5e62); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #888888, #5f5e62); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+#main-content .block h3 a{
+    color: #fff;
+    margin: 0 5px;
+}
+
+#main-content .block h3 img{
+    margin-right: 5px;
+}
+
+#main-content .block-inner{
+    padding: 10px 15px;
+}
+
+#main-content .block-inner p{
+    margin-bottom: 10px;
+}
+
+#main-content .block-inner p a{
+    color:#000;
+    text-decoration: underline;
+}
+
+.block.prod{
+    overflow: hidden;
+}
+
+.block .additional{
+    clear: both;
+}
+
+.block .additional h4{
+    float: left;
+    padding: 10px !important;
+    color: #fff;
+    margin-left: 20px !important;
+}
+
+.additional div{
+    overflow: hidden;
+    clear: both;
+}
+
+.additional a{
+   width: 160px;
+    float: left;
+    border-right: 1px dotted #bbb;
+    border-top: 1px dotted #bbb;
+    padding: 6px;
+    text-align: center;
+}
+
+.additional a:last-child{
+    border-right:none;
+}
+
+.additional a img{
+    width: 140px;
+}
+
+.block.prod .image{
+    float: left;
+    width: 240px;
+    text-align: center;
+}
+
+.block.prod .image a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.block.prod .data{
+    float: left;
+    width: 405px;
+    padding: 0 10px;
+}
+
+.block.prod h4{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.block.prod .product-price{
+    font-weight: bold;
+    border-bottom: 1px dotted #bbb;
+}
+
+.block.prod .product-price span{
+    float: right;
+}
+
+.block.prod .product-availability-info{
+    border-top: 1px dotted #bbb;
+    border-bottom: 1px dotted #bbb;
+    padding: 10px 0;
+}
+
+.lefty,.righty{
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.lefty span,.righty span{
+    padding: 2px;
+    margin-bottom:5px;
+    display: block;
+    background: #E6E6E6;
+    border-bottom: 1px dotted #bbb;
+}
+
+.block.prod .product-availability-info p{
+    margin-bottom: 0 !important;
+    margin-top: 10px;
+}
+
+.block.prod .product-availability{
+    font-weight: bold;
+}
+
+.block.prod .product-availability img{
+    position: relative;
+    top: -2px;
+}
+
+#add-to-cart{
+    margin: 10px 0;
+}
+
+#add-to-cart p{
+    border-bottom:1px dotted #bbb;
+    padding-bottom: 10px;
+}
+
+#length,#quantity{
+    border: 1px solid;
+    background: #fff;
+    width: 60px;
+    height:20px;
+}
+
+#add-to-cart input[type="submit"]{
+    color: #fff;
+    float:right;
+      -webkit-border-radius: 4px; /* Safari 3-4, iOS 1-3.2, Android ≤1.6 */
+          border-radius: 4px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+.dyn-price{
+    float: right;
+    color:#325A7C;;
+    font-weight: bold;
+}
+
+.pagination{
+    overflow: hidden;
+    height: 21px;
+    line-height: 21px;
+    margin: 10px;
+    clear: both;
+}
+
+.pagiation .text{
+    float: left;
+}
+
+.pagination .links{
+    float: right;
+}
+
+.pagination .links a{
+    line-height: 1;
+    display: block;
+    float: left;
+    color: #fff !important;
+    text-decoration: none !important;
+    margin: 0 4px;
+    padding: 2px 6px;
+}
+
+#welcome{
+    text-align: justify;
+}
+
+#welcome .about-img{
+    float: right;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#slider-code { height: 160px; overflow:hidden; margin: 0 auto; width:558px; }
+#slider-code .viewport { float: left; width: 480px; height: 160px; overflow: hidden; position: relative; }
+#slider-code .buttons { display: block; float: left; text-decoration: none;
+color:#000; font-weight: bold; font-size: 20px;height: 160px;
+line-height: 160px; padding: 0 10px;}
+#slider-code .disable { color:#ccc; }
+#slider-code .overview { list-style: none; padding: 0; margin: 0;  position: absolute; left: 0; top: 0; }
+#slider-code .overview li{ float: left; margin: 0 20px 0 0; height: 160px; border: 1px solid #dcdcdc; width: 240px;}
+
+.contact-cta{
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contact-cta span{
+    color: #d1001a;
+}
+
+
+#main-footer{
+    padding: 10px;
+    background:#464646;
+    color:#e0e0e0;
+    overflow: hidden;
+}
+
+#main-footer a{
+    color:#e0e0e0;
+    text-decoration: none;
+}
+
+.contact-data{
+    line-height: 1.5;
+    float: left;
+}
+
+.footer-nav{
+    float: right;
+}
+.footer-nav p{
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

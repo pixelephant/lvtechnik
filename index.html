@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fancybox.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div id="main">
+            <header id="main-header">
+                <a id="logo" href="/"><img src="img/logo.png" alt="Truckplusz logó" /></a>
+                <div id="user-block">
+                    <form id="login-form" action="#">
+                        <label for="email">E-mail:</label> <input type="email" name="email" id="email" size="12" required>
+                        <label for="password">Jelszó:</label> <input type="password" name="password" id="password" size="12" required>
+                        <input type="submit" class="black-button" value="bejelentkezés">
+                    </form>
+                    <div id="mini-cart">
+                        <div>
+                            <a class="cart-btn black-button" href="#"><img src="img/cart.png" alt="Kosár"></a>
+                            <span>Termék:<strong>0</strong></span>
+                            <span>Összesen:<strong>0</strong></span>
+                        </div>
+                        <a class="view-btn black-button" href="#">Megtekint</a>
+                    </div>
+                </div>
+            </header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="/">Főoldal</a></li>
+                    <li><a href="#">Szállítás</a></li>
+                    <li><a href="#">Kapcsolat</a></li>
+                    <li><a href="#">Bejelentkezés/Regisztráció</a></li>
+                    <li><form id="search-form" action="#">
+                        <input type="search" name="query" id="query" placeholder="Termék neve" required>
+                        <input type="submit" class="black-button" value="Keres">
+                    </form></li>
+                </ul>
+            </nav>
+            <section id="promo">
+                <div style="float: right; height: 182px;">
+                    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="260" height="182" id="images/banners/header_banner">
+                        <param name="movie" value="http://www.truckplusz.hu/images/banners/header_banner.swf">
+                        <param name="quality" value="high">
+                        <param name="bgcolor" value="#ffffff">
+                        <param name="play" value="true">
+                        <param name="loop" value="true">
+                        <param name="wmode" value="transparent">
+                        <param name="scale" value="showall">
+                        <param name="menu" value="true">
+                        <param name="devicefont" value="false">
+                        <param name="salign" value="">
+                        <param name="allowScriptAccess" value="sameDomain">
+                        <!--[if !IE]>-->
+                        <object type="application/x-shockwave-flash" data="http://www.truckplusz.hu/images/banners/header_banner.swf" width="260" height="182">
+                            <param name="movie" value="images/banners/header_banner.swf">
+                            <param name="quality" value="high">
+                            <param name="bgcolor" value="#ffffff">
+                            <param name="play" value="true">
+                            <param name="loop" value="true">
+                            <param name="wmode" value="transparent">
+                            <param name="scale" value="showall">
+                            <param name="menu" value="true">
+                            <param name="devicefont" value="false">
+                            <param name="salign" value="">
+                            <param name="allowScriptAccess" value="sameDomain">
+                        <!--<![endif]-->
+                            <a href="http://www.adobe.com/go/getflash">
+                                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player">
+                            </a>
+                        <!--[if !IE]>-->
+                        </object>
+                        <!--<![endif]-->
+                    </object>
+                </div>
+                <p>Ingyenes kiszállítás futárszolgálattal nettó 30.000 Ft felett az ország egész területére!</p>
+            </section>
+            
+            
+            
+            
+            <section id="content">
+                <aside id="main-aside">
+                    <div class="section">
+                        <h3><img src="img/arrow.png" alt="">Kategóriák</h3>
+                        <ul>
+                            <li class="open"><a href="#">DAF karosszéria</a>
+                            
+                                <ul class="sub">
+                                    <li><a href="#">LF (rendelésre)</a></li>
+                                    <li><a href="#">65 - 75 - 85 (rendelésre)</a></li>
+                                    <li><a href="#">CF 65 - 75</a></li>
+                                    <li><a href="#">CF 85</a></li>
+                                    <li><a href="#">XF 95 2. széria</a></li>
+                                </ul>
+                            
+                            </li>
+                            <li><a href="#">MAN karosszéria</a></li>
+                            <li><a href="#">Scania karosszéria</a></li>
+                            <li><a href="#">Volvo karosszéria</a></li>
+                            <li><a href="#">Mercedes karosszéria</a></li>
+                            <li><a href="#">Renault karosszéria</a></li>
+                            <li><a href="#">Iveco karosszéria</a></li>
+                            <li><a href="#">DAF karosszéria</a></li>
+                            <li><a href="#">MAN karosszéria</a></li>
+                            <li><a href="#">Scania karosszéria</a></li>
+                            <li><a href="#">Volvo karosszéria</a></li>
+                            <li><a href="#">Mercedes karosszéria</a></li>
+                            <li><a href="#">Renault karosszéria</a></li>
+                            <li><a href="#">Iveco karosszéria</a></li>
+                            <li><a href="#">DAF karosszéria</a></li>
+                            <li><a href="#">MAN karosszéria</a></li>
+                            <li><a href="#">Scania karosszéria</a></li>
+                            <li><a href="#">Volvo karosszéria</a></li>
+                            <li><a href="#">Mercedes karosszéria</a></li>
+                            <li><a href="#">Renault karosszéria</a></li>
+                        </ul>
+                    </div>
+                    <div class="section attention">
+                        <h3><img src="img/arrow.png" alt="">Figyelmébe ajánljuk</h3>
+                        <a href="#" class="product">
+                            <img src="img/temp.jpeg" alt="Kamion">
+                            <p class="product-name">Alsó hűtőrács</p>
+                            <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/temp.jpeg" alt="Kamion">
+                            <p class="product-name">Alsó hűtőrács</p>
+                            <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/temp.jpeg" alt="Kamion">
+                            <p class="product-name">Alsó hűtőrács</p>
+                            <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                        </a>
+                    </div>
+                </aside>
+                <div id="main-content">
+                    <div id="welcome" class="block">
+                        <div class="block-inner">
+                            <img class="about-img" src="img/img_1249.jpeg" alt="Raktárunk">
+                            <p>Tisztelt Látogató!</p>
+                            <p>Az L.V.Technik Kft. 1994 óta van jelen a hazai piacon haszonjármű alkatrész beszállítóként. Cégünk többek között karosszéria elemek és felépítmény alkatrészek importjával és kereskedelmével foglalkozik. <strong>TruckPlusz.hu</strong> néven egy saját fejlesztésű online értékesítési felületet biztosítunk meglévő és leendő partnereink részére.</p>
+                            <p>LEzen az oldalon megtalálhatja termékkínálatunk nagy részét, minden esetben képekkel és árral feltüntetve. Az oldalon megtalálható termékek döntő többsége a raktárunkban rendszeresen megforduló áru és azonnal rendelkezésre áll. Ez lehetővé teszi számunkra, hogy a leggyorsabb kiszolgálást tudjuk Önnek biztosítani, hiszen a leglassabb kiszállítási opciónk esetén is a munkanapokon 15:00-ig <strong>megrendelt termékek másnap Önnél vannak</strong>. Ráadásul nettó <strong>30.000 Ft feletti</strong> rendelés esetén Önnek <strong>szállítási költséget sem kell fizetnie.</strong></p>
+                            <p>Kérjük nézzen körül nálunk, ismerkedjen meg a felülettel és a böngészést segítő különleges funkciókkal, melyek segítségével Ön akár otthonról a karosszékből tudja kiválasztani a szükséges alkatrészeket. Ha bármilyen kérdése vagy észrevétele van a szolgáltatásunkkal kapcsolatban, keressen minket <a href="#">elérhetőségeinken</a> bizalommal!</p>
+                            <p>Üdvözlettel:<br>L.V.Technik Kft. csapata</p>
+                            <div id="slider-code">
+                                <a href="#" class="buttons prev">&#9664;</a>
+                                <div class="viewport">
+                                    <ul class="overview">
+                                        <li><img src="img/slider/1.jpg"></li>
+                                        <li><img src="img/slider/2.jpg"></li>
+                                        <li><img src="img/slider/3.jpg"></li>
+                                        <li><img src="img/slider/4.jpg"></li>
+                                        <li><img src="img/slider/1.jpg"></li>
+                                        <li><img src="img/slider/2.jpg"></li>
+                                        <li><img src="img/slider/3.jpg"></li>
+                                        <li><img src="img/slider/4.jpg"></li>
+                                        <li><img src="img/slider/1.jpg"></li>
+                                        <li><img src="img/slider/2.jpg"></li>
+                                        <li><img src="img/slider/3.jpg"></li>
+                                        <li><img src="img/slider/4.jpg"></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="buttons next">&#9654;</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="block grid category">
+                        <h3><img src="img/arrow.png" alt="">Termék kategóriák</h3>
+                        <div class="block-inner">
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="block grid">
+                        <h3><img src="img/arrow.png" alt="">Figyelmébe ajánljuk</h3>
+                        <div class="block-inner">
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="block grid">
+                        <h3><img src="img/arrow.png" alt=""><a href="/">FŐOLDAL</a>&raquo;<a href="#">ALOLDAL</a>&raquo;<a href="#">MÉG ALOLDALABB</a></h3>
+                        <div class="block-inner">
+                            <p class="pagination">
+                                <span class="text">
+                                    Megjelenítve <strong>1</strong>-tól <strong>8</strong>-ig (összesen <strong>8</strong> termék)
+                                </span>
+                                <span class="links">
+                                    <a class="black-button" href="#">1</a>
+                                    <a class="black-button" href="#">2</a>
+                                    <a class="black-button" href="#">3</a>
+                                    <a class="black-button" href="#">4</a>
+                                </span>
+                            </p>
+                            <div class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                                <p class="product-sku">Cikkszám: 123421342</p>
+                                <div class="product-actions">
+                                    <p class="product-availability"><img src="img/check.gif" alt=""> RAKTÁRON</p>
+                                    <p><a href="#">Kosárba</a><a href="#">Részletek</a></p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/temp.jpeg" alt="Kamion">
+                                <p class="product-name">Alsó hűtőrács</p>
+                                <p class="product-price">Ár: <span>Kérem jelentkezzen be!</span></p>
+                                <p class="product-sku">Cikkszám: 123421342</p>
+                                <div class="product-actions">
+                                    <p class="product-availability"><img src="img/close.gif" alt=""> NINCS RAKTÁRON</p>
+                                    <p><a href="#">Kosárba</a><a href="#">Részletek</a></p>
+                                </div>
+                            </div>
+                            <p class="pagination">
+                                <span class="text">
+                                    Megjelenítve <strong>1</strong>-tól <strong>8</strong>-ig (összesen <strong>8</strong> termék)
+                                </span>
+                                <span class="links">
+                                    <a class="black-button" href="#">1</a>
+                                    <a class="black-button" href="#">2</a>
+                                    <a class="black-button" href="#">3</a>
+                                    <a class="black-button" href="#">4</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="block prod">
+                        <h3><img src="img/arrow.png" alt=""><a href="/">FŐOLDAL</a>&raquo;<a href="#">ALOLDAL</a>&raquo;<a href="#">M200</a></h3>
+                        <div class="block-inner">
+                            <div class="image">
+                                <a href="img/tamp_big.jpeg" class="fancybox">
+                                    <img src="img/tamp.jpeg" alt="">
+                                    <p><img src="img/mag.png" alt=""> nagyítás</p>
+                                </a>
+                            </div>
+                            <div class="data">
+                                <h4>Szervizajtó</h4>
+                                <p class="product-price">Ár: <span>132 123 Ft</span></p>
+                                <p class="product-sku">Cikkszám: 121212</p>
+                                <p class="product-m-sku">Gyári cikkszám: 454545</p>
+                                <p>Típus: MAN L200</p>
+                                <p>Anyag: lemezöntő anyag (SMC)</p>
+                                <p>Származási hely: EU</p>
+                                <p>Szín: fekete</p>
+                                <p>A gyári cikkszám csupán a beazonosítás megkönnyítése érdekében van megadva. Az eredeti alkatrész helyére illeszkedő utángyártott termék.</p>
+                                <p>Gyártó: <strong><a href="#">asd.asd</a></strong></p>
+                                <div class="product-availability-info">
+                                    <p class="product-availability">
+                                        <img src="img/close.gif" alt=""> NINCS RAKTÁRON
+                                    </p>
+                                    <p>Nem biztos benne, hogy erre az alkatrészre van szüksége? Keressen minket <a href="#">elérhetőségeinken</a> és beazonosítjuk Önnek a keresett alkatrészeket!</p>
+                                </div>
+                                <div class="product-availability-info">
+                                    <div class="clearfix">
+                                        <p class="product-availability lefty">
+                                            <span>BAL</span>
+                                            <img src="img/close.gif" alt=""> NINCS RAKTÁRON
+                                        </p>
+                                        <p class="product-availability righty">
+                                            <span>JOBB</span>
+                                            <img src="img/close.gif" alt=""> NINCS RAKTÁRON
+                                        </p>
+                                    </div>
+                                    <p>Nem biztos benne, hogy erre az alkatrészre van szüksége? Keressen minket <a href="#">elérhetőségeinken</a> és beazonosítjuk Önnek a keresett alkatrészeket!</p>
+                                </div>
+                                <form action="#" id="add-to-cart">
+                                    <p>
+                                        <label for="length">Hossz: </label> <input data-min="10" min="10" data-max="1000" max="1000" data-base="12" type="number" name="length" id="length"> mm <span class="dyn-price">123</span>
+                                    </p>
+                                    <p>
+                                       <label for="nemtom">Nemtom: </label> <select name="nemtom" id="nemtom"><option value="0">ezt se</option> <option value="1">végképp</option></select>
+                                    </p>
+                                    <label for="quantity">Mennyiség: </label><input type="number" name="quantity" id="quantity" value=1 min=1> db
+                                    <input class="black-button" type="submit" value="Kosárba">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <h4 class="black-button">További képek</h4>
+                            <div>
+                                <a href="img/tamp_big.jpeg" class="fancybox">
+                                    <img src="img/tamp.jpeg" alt="">
+                                </a>
+                                <a href="img/tamp_big.jpeg" class="fancybox">
+                                    <img src="img/tamp.jpeg" alt="">
+                                </a>
+                                <a href="img/tamp_big.jpeg" class="fancybox">
+                                    <img src="img/tamp.jpeg" alt="">
+                                </a>
+                                <a href="img/tamp_big.jpeg" class="fancybox">
+                                    <img src="img/tamp.jpeg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <p class="contact-cta block">
+                        KÉRDÉSE VAN? - HÍVJON MINKET: <span>76/493-507</span> - MUNKANAPOKON: 8.00-16.00
+                    </p>
+                    
+                </div>
+            </section>
+            
+            <section id="main-footer">
+                <div class="contact-data">
+                    <p><strong>L.V.Technik Kft.</strong></p>
+                    <p>6050 Lajosmizse, Ceglédi út 70.</p>
+                    <p>Tel.:76/493-507 Fax:76/505-783</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/">Főoldal</a> | 
+                    <a href="#">Kapcsolat</a> | 
+                    <a href="#">Kosár</a> | 
+                    <a href="#">Személyes beállítások</a> | 
+                    <a href="#">Oldaltérkép</a> | 
+                    <a href="#">ÁSzF</a>
+                    <p>Copyright © 2008-2012  L.V.Technik Kft.</p>
+                </div>
+            </section>
+            
+            
+        </div>
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/fancybox.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
+
