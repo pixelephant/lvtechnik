@@ -408,17 +408,17 @@ body{
     width: 697px;   
 }
 
-#main-content .block{
+ .block{
     background: #fff;
     border: 1px solid #BBBBBB;
     margin-bottom: 10px;
 }
 
-#main-content .grid{
+ .grid{
     overflow: hidden;
 }
 
-#main-content .grid .block-inner{
+ .grid .block-inner{
     padding: 0;
     overflow: hidden;
     padding-left: 1px;
@@ -426,18 +426,18 @@ body{
     padding-bottom: 2px;
 }
 
-#main-content .block.grid .product{
+ .block.grid .product{
     width: 157px;
     float: left;
     border: 1px dotted #bbb;
     margin: 2px;
 }
 
-#main-content .block.grid.category .product-name{
+ .block.grid.category .product-name{
     text-align: center;
 }
 
-#main-content .block h3{
+ .block h3{
     margin: 0;
     padding:8px;
     color:#fff;
@@ -450,24 +450,24 @@ body{
     background-image:         linear-gradient(to bottom, #888888, #5f5e62); /* Firefox 16+, IE10, Opera 12.50+ */
 }
 
-#main-content .block h3 a{
+ .block h3 a{
     color: #fff;
     margin: 0 5px;
 }
 
-#main-content .block h3 img{
+ .block h3 img{
     margin-right: 5px;
 }
 
-#main-content .block-inner{
+ .block-inner{
     padding: 10px 15px;
 }
 
-#main-content .block-inner p{
+ .block-inner p{
     margin-bottom: 10px;
 }
 
-#main-content .block-inner p a{
+ .block-inner p a{
     color:#000;
     text-decoration: underline;
 }
@@ -690,6 +690,85 @@ line-height: 160px; padding: 0 10px;}
 .footer-nav p{
     margin-top: 10px;
     text-align: right;
+}
+
+
+
+/*logreg.html*/
+
+#full-page{
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#register-block{
+    float: left;
+    width: 451px;
+    margin-right: 10px;
+}
+
+#login-block{
+    float: left;
+    width: 452px;
+}
+
+.form{
+    font-size: 13px;
+}
+
+.form fieldset{
+padding: 15px 0px 15px 15px;
+margin-top: 10px;
+border-bottom:1px dotted #bbb;
+}
+
+.form legend{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.form div{
+    margin: 5px 0;
+}
+
+.form label{
+    width: 150px;
+    float: left;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.form input{
+    border: 1px solid;
+    width:50%;
+}
+
+.form input[type="submit"]{
+    width: auto;
+color: #fff;
+float: right;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+text-transform: none;
+font-size: 13px;
+padding: 5px 15px;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.form .zip{
+    width: 20%;
+}
+
+.forgotten{
+    float: left;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fancybox.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div id="main">
+            <header id="main-header">
+                <a id="logo" href="/"><img src="img/logo.png" alt="Truckplusz logó" /></a>
+                <div id="user-block">
+                    <form id="login-form" action="#">
+                        <label for="email">E-mail:</label> <input type="email" name="email" id="email" size="12" required>
+                        <label for="password">Jelszó:</label> <input type="password" name="password" id="password" size="12" required>
+                        <input type="submit" class="black-button" value="bejelentkezés">
+                    </form>
+                    <div id="mini-cart">
+                        <div>
+                            <a class="cart-btn black-button" href="#"><img src="img/cart.png" alt="Kosár"></a>
+                            <span>Termék:<strong>0</strong></span>
+                            <span>Összesen:<strong>0</strong></span>
+                        </div>
+                        <a class="view-btn black-button" href="#">Megtekint</a>
+                    </div>
+                </div>
+            </header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="/">Főoldal</a></li>
+                    <li><a href="#">Szállítás</a></li>
+                    <li><a href="#">Kapcsolat</a></li>
+                    <li><a href="#">Bejelentkezés/Regisztráció</a></li>
+                    <li><form id="search-form" action="#">
+                        <input type="search" name="query" id="query" placeholder="Termék neve" required>
+                        <input type="submit" class="black-button" value="Keres">
+                    </form></li>
+                </ul>
+            </nav>
+            
+            <section id="full-page">
+                <div class="block" id="register-block">
+                    <h3><img src="img/arrow.png" alt="">Regisztrálás új vásárlóként</h3>
+                    <div class="block-inner">
+                        <form class="form" action="" id="register-form">
+                            <fieldset>
+                                <legend>Számlázási adatok</legend>
+                                <div>
+                                    <label for="">Cégnév</label> <input type="text" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Utca, házszám</label> <input type="text" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Város</label> <input type="text" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Irányítószám</label> <input class="zip" type="text" name="" id="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Kapcsolattartó adatai</legend>
+                                <div>
+                                    <label for="">Név</label> <input type="text" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Telefonszám</label> <input type="tel" name="" id="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Bejelentkezési adaok</legend>
+                                <div>
+                                    <label for="">E-mail cím</label> <input type="email" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Jelszó</label> <input type="password" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Jelszó mégegyzser</label> <input type="password" name="" id="">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div>
+                                    <label for="">Feliratkozás hírlevélre</label> <input type="checkbox" name="" id="">
+                                </div>
+                            </fieldset>
+                            <div>
+                                <input type="submit" class="black-button" value="Elküld">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="block" id="login-block">
+                    <h3><img src="img/arrow.png" alt="">Bejelentkezés</h3>
+                    <div class="block-inner">
+                        <form class="form" action="" id="login-form-full">
+                            <fieldset>
+                                <div>
+                                    <label for="">E-mail cím</label> <input type="email" name="" id="">
+                                </div>
+                                <div>
+                                    <label for="">Jelszó</label> <input type="password" name="" id="">
+                                </div>
+                            </fieldset>
+                            <a class="forgotten" href="">Elfelejtette jelszavát?</a>
+                            <input type="submit" class="black-button" value="Bejelentkezés">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section id="main-footer">
+                <div class="contact-data">
+                    <p><strong>L.V.Technik Kft.</strong></p>
+                    <p>6050 Lajosmizse, Ceglédi út 70.</p>
+                    <p>Tel.:76/493-507 Fax:76/505-783</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="/">Főoldal</a> | 
+                    <a href="#">Kapcsolat</a> | 
+                    <a href="#">Kosár</a> | 
+                    <a href="#">Személyes beállítások</a> | 
+                    <a href="#">Oldaltérkép</a> | 
+                    <a href="#">ÁSzF</a>
+                    <p>Copyright © 2008-2012  L.V.Technik Kft.</p>
+                </div>
+            </section>
+            
+            
+        </div>
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/fancybox.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
+
