@@ -774,9 +774,119 @@ margin-top: 5px;
 
 /*kosár*/
 
+.table{
+    width: 100%;
+}
 
+.table .black-button{
+    color: #fff;
+    -webkit-border-radius: 4px;
+border-radius: 4px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+text-transform: none;
+font-size: 10px;
+padding: 5px 15px;
+}
 
+.table thead{
+    border-bottom: 1px dotted #bbb;
+}
 
+.table th{
+    padding:5px;
+}
+
+.table td{
+    text-align: center;
+}
+
+.table tr{
+    border-top:1px dotted #bbb;
+}
+
+.table td img{
+    width: 70px;
+    padding: 10px;
+}
+
+.table td.details{
+    text-align: left;
+}
+
+.table td.details span{
+    display: block;
+}
+
+.table input[type="number"]{
+border: 1px solid;
+background: #fff;
+width: 60px;
+height: 20px;
+}
+
+.table .alert{
+    border-top: none;
+    color:#d1001a;
+    font-weight: bold;
+}
+
+.alert td{
+    text-align: left;
+    padding: 5px 30px;
+}
+
+.netto-price,.unit-price{
+    background:#EEEEEE;
+}
+
+.netto-price{
+    min-width: 60px;
+}
+
+.item-actions{
+    padding-top: 10px;
+    height: 25px;
+}
+
+.item-name{
+    font-weight: bold;
+}
+
+.item-detail{
+    padding-left: 10px;
+}
+
+.table tfoot tr{
+    border: none;
+}
+
+.table tfoot td{
+    font-weight: bold;
+    padding: 10px;
+    border-top:1px dotted #bbb;
+}
+
+.table td.emp{
+    border: none;
+}
+
+.table tr.last td.emp{
+    text-align: left;
+}
+
+.table tr.last .black-button{
+    font-weight: normal;
+}
+
+.table tr.last td.order{
+    text-align: right;
+}
+
+.table tr.last td.order img{
+    width: auto;
+}
 
 /* ==========================================================================
    Helper classes
