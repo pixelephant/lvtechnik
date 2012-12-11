@@ -160,6 +160,16 @@ body{
     padding:5px 10px;
 }
 
+#login-form{
+    overflow: hidden;
+}
+
+#login-form .black-button{
+    float: right;
+}
+
+
+
 #login-form label,#mini-cart{
     color:#e0e0e0;
 }
