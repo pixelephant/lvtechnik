@@ -408,6 +408,11 @@ body{
     width: 697px;   
 }
 
+#main-content.full-page{
+    width:917px;
+    margin: 10px 0 0 0;
+}
+
  .block{
     background: #fff;
     border: 1px solid #BBBBBB;
@@ -714,8 +719,10 @@ line-height: 160px; padding: 0 10px;}
 }
 
 .form{
-    font-size: 13px;
+    font-size: 12px;
 }
+
+
 
 .form fieldset{
 padding: 15px 0px 15px 15px;
@@ -730,6 +737,11 @@ border-bottom:1px dotted #bbb;
 
 .form div{
     margin: 5px 0;
+    font-size: 11px;
+}
+
+.form p{
+    margin: 0;
 }
 
 .form label{
@@ -770,6 +782,48 @@ margin-top: 5px;
     color: #000;
     font-weight: bold;
     text-decoration: none;
+}
+
+/*megrendelés*/
+
+.change-address{
+    color: #000;
+}
+
+#order-method{
+    width:75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#order-method thead tr{
+    border-top: none;
+}
+
+#order-method tr{
+    border:none;
+}
+
+#order-method td{
+    padding: 5px;
+    border-bottom: 1px dotted #bbb;
+}
+
+#order-method input{
+    width: auto;
+    float: left;
+}
+
+#order-method label{
+    width: auto;
+}
+
+#order-method img{
+    width: auto;
+}
+
+.gray{
+    background: #eee;
 }
 
 /*kosár*/
@@ -869,7 +923,7 @@ height: 20px;
 }
 
 .table td.emp{
-    border: none;
+    border: none !important;
 }
 
 .table tr.last td.emp{
