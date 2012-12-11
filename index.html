@@ -45,9 +45,9 @@
             <nav id="main-nav">
                 <ul>
                     <li><a href="/">Főoldal</a></li>
-                    <li><a href="#">Szállítás</a></li>
-                    <li><a href="#">Kapcsolat</a></li>
-                    <li><a href="#">Bejelentkezés/Regisztráció</a></li>
+                    <li><a href="#">Rólunk</a></li>
+                    <li><a href="#">Elérhetőség</a></li>
+                    <li><a href="#">Bejelentkezés</a></li>
                     <li><form id="search-form" action="#">
                         <input type="search" name="query" id="query" placeholder="Termék neve" required>
                         <input type="submit" class="black-button" value="Keres">
@@ -564,7 +564,7 @@
                     </div>
                     
                     <div class="block">
-                        <h3><img src="img/arrow.png" alt=""> Szállítási információk</h3>
+                        <h3><img src="img/arrow.png" alt=""> Megrendelés</h3>
                         <div class="block-inner">
                             <form action="" class="form">
                                 <fieldset>
@@ -600,6 +600,281 @@
                                         </tbody>
                                     </table>
                                     <p>Nyilvántartásunk szerint a rendelt termékek egy része jelenleg nem áll rendelkezésre raktárunkban. Rendelését a kiválasztott szállítási módnak megfelelően juttatjuk el Önhöz, amint az összes termék rendelkezésre áll. Az itt leírtaktól eltérő kézbesítési igényével kapcsolatban kérjük keressen minket elérhetőségeinken, vagy írja azt bele a megjegyzés mezőbe.</p>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Megjegyzések, észrevételek</legend>
+                                    <textarea name="" id="" cols="45" rows="3"></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Számlázási cím</legend>
+                                    <div>
+                                        <label>
+                                            <p><strong>L.V.Technik Kft.</strong></p>
+                                            <p>6050 Lajosmizse</p>
+                                            <p>Ceglédi út 70.</p>
+                                        </label>
+                                        <a href="#" class="change-address">
+                                            Amennyiben új szállítási címet szeretne megadni, vagy a címjegyzékből választani, akkor kattintson ide.
+                                        </a>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Fizetési mód</legend>
+                                    <div class="table-wrap">
+                                        <table id="payment-method" class="table">
+                                        <thead>
+                                            <th></th>
+                                            <th class="gray">Fizetési mód</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="radio" name="g1" id=""></td>
+                                                <td class="gray"> <label for="">Készpénz átvételkor</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="radio" name="g1" id=""></td>
+                                                <td class="gray"><label for="">Átutálás átvétel előtt</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="radio" name="g1" id=""></td>
+                                                <td class="gray"><label for="">Átutálás átvétel után</label></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="summary-table" class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>rendelés összege</td>
+                                                <td class="gray">1 494 494 Ft</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HÁZHOZSZÁLLÍTÁS FUTÁRSZOLGÁLATTAL</td>
+                                                <td class="gray">0 Ft</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ÁFA (+ 27 %)</td>
+                                                <td class="gray">403 123 Ft</td>
+                                            </tr>
+                                            <tr class="brutto">
+                                                <td>BRUTTÓ VÉGÖSSZEG</td>
+                                                <td class="gray">1 898 056 Ft</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Megjegyzések, észrevételek</legend>
+                                    <textarea name="" id="" cols="45" rows="3"></textarea>
+                                </fieldset>
+                                <div class="clearfix">
+                                    <a href="#" class="back-to-cart black-button">Vissza a kosárhoz</a>
+                                    <input type="image" src="img/button_start_order_next_to_end.png">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="block">
+                        <h3><img src="img/arrow.png" alt=""> Rendelés áttekintése</h3>
+                        <div class="block-inner">
+                            <form action="" class="form">
+                                <fieldset>
+                                    <legend>Számlázási és szállítási információk</legend>
+                                    <div class="table-wrap">
+                                    <table id="payment-summary">
+                                        <tbody>
+                                            <tr>
+                                                <td class="bold">SZÁMLÁZÁSI CÍM:</td>
+                                                <td class="gray">
+                                                    <p><strong>L.V.Technik Kft.</strong></p>
+                                                    <p>6050 Lajosmizse</p>
+                                                    <p>Ceglédi út 70.</p>
+                                                </td>                                    
+                                            </tr>
+                                            <tr>
+                                                <td class="bold">Fizetési mód</td>
+                                                <td class="gray">Átutalás átvétel után</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bold">Számla adatok</td>
+                                                <td class="gray">
+                                                    <p><strong>L.V.Technik Kft.</strong></p>
+                                                    <p>Unicredit bank</p>
+                                                    <p>Számlaszám: 12321412412412412</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2"><a href="" class="black-button">szerkeszt</a></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <table id="method-summary">
+                                        <tbody>
+                                            <tr>
+                                                <td class="bold">Szállítási cím</td>
+                                                <td class="gray">
+                                                    <p><strong>L.V.Technik Kft.</strong></p>
+                                                    <p>6050 Lajosmizse</p>
+                                                    <p>Ceglédi út 70.</p>
+                                                </td>                                    
+                                            </tr>
+                                            <tr>
+                                                <td class="bold">Szállítási mód</td>
+                                                <td class="gray">Személyes átvétel</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2"><a href="" class="black-button">szerkeszt</a></td>
+                                            </tr>
+                                        </tfoot>
+                                        
+                                    </table>
+                                    
+                                    </div>
+                                    <table id="comment-summary">
+                                        <tr>
+                                            <td class="bold">Megjegyzések, észrevételek</td>
+                                            <td class="gray">Nincs hozzászólás</td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <p>Nyilvántartásunk szerint a rendelt termékek egy része jelenleg nem áll rendelkezésre raktárunkban. Rendelését a kiválasztott szállítási módnak megfelelően juttatjuk el Önhöz, amint az összes termék rendelkezésre áll. Az itt leírtaktól eltérő kézbesítési igényével kapcsolatban kérjük keressen minket elérhetőségeinken, vagy írja azt bele a megjegyzés mezőbe.</p>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Rendelt termékek</legend>
+                                    <table class="table" id="cart-summary">
+                                <thead>
+                                    <th>Megnevezés</th>
+                                    <th class="unit-price">Nettó egységár</th>
+                                    <th>Mennyiség</th>
+                                    <th class="netto-price">Nettó érték</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    
+                                    <td class="details">
+                                        <span class="item-name">Ponyva profil ékes</span>
+                                        <span class="item-detail">Hossz: 1500 mm</span>
+                                    </td>
+                                    <td class="unit-price">
+                                        4 292 Ft    
+                                    </td>
+                                    <td class="item-quantity">
+                                       x 10
+                                    </td>
+                                    <td class="netto-price">
+                                        429 200 Ft
+                                    </td>
+                                </tr>
+                                <tr class="alert">
+                                    <td>
+                                        Ez a termék jelenleg nincs raktáron. A várható szállítási idővel kapcsolatban kérjük lépjen velünk kapcsolatba elérhetőségeinken.
+                                    </td>
+                                    <td class="unit-price">
+                                     
+                                    </td>
+                                    <td class="item-quantity">
+                                       
+                                    </td>
+                                    <td class="netto-price">
+                                       
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td class="details">
+                                        <span class="item-name">Ponyva profil ékes</span>
+                                        <span class="item-detail">Hossz: 1500 mm</span>
+                                    </td>
+                                    <td class="unit-price">
+                                        4 292 Ft    
+                                    </td>
+                                    <td class="item-quantity">
+                                       x 10
+                                    </td>
+                                    <td class="netto-price">
+                                        429 200 Ft
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td class="details">
+                                        <span class="item-name">Ponyva profil ékes</span>
+                                        <span class="item-detail">Hossz: 1500 mm</span>
+                                    </td>
+                                    <td class="unit-price">
+                                        4 292 Ft    
+                                    </td>
+                                    <td class="item-quantity">
+                                       x 10
+                                    </td>
+                                    <td class="netto-price">
+                                        429 200 Ft
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td class="details">
+                                        <span class="item-name">Ponyva profil ékes</span>
+                                        <span class="item-detail">Hossz: 1500 mm</span>
+                                    </td>
+                                    <td class="unit-price">
+                                        4 292 Ft    
+                                    </td>
+                                    <td class="item-quantity">
+                                       x 10
+                                    </td>
+                                    <td class="netto-price">
+                                        429 200 Ft
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td class="details">
+                                        <span class="item-name">Ponyva profil ékes</span>
+                                        <span class="item-detail">Hossz: 1500 mm</span>
+                                    </td>
+                                    <td class="unit-price">
+                                        4 292 Ft    
+                                    </td>
+                                    <td class="item-quantity">
+                                       x 10
+                                    </td>
+                                    <td class="netto-price">
+                                        429 200 Ft
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td class="emp" colspan="1">&nbsp;</td>
+                                    <td colspan="2">Nettó végösszeg:</td>
+                                    <td class="netto-price">1 494 482 Ft</td>
+                                </tr>
+                                <tr>
+                                    <td class="emp" colspan="1">&nbsp;</td>
+                                    <td colspan="2">Áfa (+ 27%)</td>
+                                    <td class="netto-price">403 540 Ft</td>
+                                </tr>
+                                <tr>
+                                    <td class="emp" colspan="1">&nbsp;</td>
+                                    <td colspan="2">Bruttó végösszeg:</td>
+                                    <td class="netto-price">1 898 072 Ft</td>
+                                </tr>
+                                <tr class="last">
+                                    <td colspan="2" class="emp">
+                                        <a href="#" class="black-button">Vásárlás folytatása</a>
+                                    </td>
+                                    <td class="order" colspan="2">
+                                        <a href="#"><img src="img/order.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                            </table>
                                 </fieldset>
                             </form>
                         </div>
