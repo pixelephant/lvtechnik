@@ -834,14 +834,14 @@ margin-top: 5px;
 #payment-summary tfoot .black-button,#method-summary tfoot .black-button{
     color: #fff;
     -webkit-border-radius: 4px;
-border-radius: 4px;
--moz-background-clip: padding;
--webkit-background-clip: padding-box;
-background-clip: padding-box;
-text-transform: none;
-font-size: 10px;
-padding: 5px 15px;
-font-weight: normal;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    text-transform: none;
+    font-size: 10px;
+    padding: 5px 15px;
+    font-weight: normal;
 }
 
 .bold{
@@ -1070,6 +1070,42 @@ height: 20px;
 
 .table tr.last td.order img{
     width: auto;
+}
+
+/*Kapcsolat*/
+
+.contact-block{
+    padding-top: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #bbb;
+}
+
+.contact-block div{
+    width: 50%;
+    float: left;
+}
+
+/*Rolunk*/
+
+ .conim{
+    margin: 10px auto 20px auto;
+    display: block;
+    border: 1px solid;
+}
+
+#rolunk .table{
+    margin: 20px auto;
+}
+
+#rolunk .table th{
+    text-align: left;
+}
+
+#rolunk .table td{
+    text-align: left;
+    padding: 5px;
 }
 
 /* ==========================================================================
