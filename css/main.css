@@ -165,7 +165,7 @@ body{
 }
 
 #login-form .black-button{
-    float: right;
+    
 }
 
 
@@ -1106,6 +1106,31 @@ height: 20px;
 #rolunk .table td{
     text-align: left;
     padding: 5px;
+}
+
+
+/*Beállítások*/
+
+#settings-ul{
+  display: block;
+margin: 0 auto;
+list-style: none;
+width: 50%;
+text-align: center;
+}
+
+#settings ul a{
+    font-weight: bold;
+    color:#000;
+    text-decoration: none;
+    display: block;
+    background: #EEEEEE;
+    border-bottom: 1px dotted #bbb;
+    padding: 10px 20px;
+}
+
+#settings ul a:hover{
+    text-decoration: underline;
 }
 
 /* ==========================================================================
